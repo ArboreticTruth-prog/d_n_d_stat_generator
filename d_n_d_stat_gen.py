@@ -49,7 +49,6 @@ def set_stat(index):
 def end_stats ():       
     stats = stat_array() 
     stat1= set_stat(stats[0])
-    print(stat1)
     stat2= set_stat(stats[1])
     stat3= set_stat(stats[2])
     stat4= set_stat(stats[3])
