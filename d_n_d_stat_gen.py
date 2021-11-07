@@ -48,14 +48,17 @@ def set_stat(index):
 
 def end_stats ():       
     stats = stat_array() 
-    stat1 = set_stat(stats[0])
+    stat1= set_stat(stats[0])
+    print(stat1)
     stat2= set_stat(stats[1])
     stat3= set_stat(stats[2])
     stat4= set_stat(stats[3])
     stat5= set_stat(stats[4])
     stat6= set_stat(stats[5])
-    modified_stat = f"Stat One: {stat1},Stat Two: {stat2},Stat Three: {stat3},Stat Four: {stat4},Stat Five: {stat5},Stat Six: {stat6},"
-    # modified_stats = [stat1, stat2, stat3, stat4, stat5, stat6]
+
+    print(f"Your stat array is {stats}")
+    modified_stat = [input(f"What stat is this {stat1}") + " " + str(stat1),input(f"What stat is this {stat2} ") + " " + str(stat2),input(f"What stat is this {stat3} ") + " " + str(stat3),
+    input(f"What stat is this {stat4} ") + " " + str(stat4),input(f"What stat is this {stat5} ") + " " + str(stat5),input(f"What stat is this {stat6} ") + " " + str(stat6)]
    
     return modified_stat
 
